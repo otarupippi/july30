@@ -13,6 +13,10 @@
   height: 300px;
 }
 
+h2{
+  margin-top: 30px;
+}
+
 .box {
   width: 150px;
   height: 100px;
@@ -87,6 +91,8 @@
   background: #ddd;
 }
 
+
+
 .scroll {
   overflow: scroll;
 }
@@ -99,6 +105,9 @@
 .scrolly {
   overflow: hidden;
   overflow-y: scroll;
+}
+.jikken{
+  overflow-y: hidden;
 }
 
 .box p {
