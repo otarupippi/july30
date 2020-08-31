@@ -1,4 +1,7 @@
 // alert('hello');
+// $('#accordionBtn').click(function(){
+//   $('.card-body').toggleClass('jikken');
+// })
 $('#accordionBtn').click(function(){
-  $('.card-body').toggleClass('jikken');
+  $('.beneath').toggleClass('hide');
 })

@@ -15,6 +15,7 @@
 
 h2{
   margin-top: 30px;
+  text-align: center;
 }
 
 .box {
@@ -103,20 +104,32 @@ h2{
 }
 
 .scrolly {
-  overflow: hidden;
+  // overflow: hidden;
   overflow-y: scroll;
 }
-.jikken{
-  overflow-y: hidden;
+
+
+.hide{
+  display: none;
 }
 
 .box p {
   white-space: nowrap;
 }
 
+.card_special{
+  max-width: calc(100%/3);
+}
+
 @media (max-width: 767px) {
   .columns {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media(max-width: 575px){
+  .card_special{
+    max-width: 100%;
   }
 }
