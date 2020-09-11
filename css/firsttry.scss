@@ -1,3 +1,20 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background:pink;
+}
+
 .header__logo {
   width: 200px;
   height: 50px;
@@ -11,6 +28,11 @@
   width: 80%;
   margin: 10px auto;
   height: 300px;
+}
+
+h2{
+  margin-top: 30px;
+  text-align: center;
 }
 
 .box {
@@ -42,6 +64,7 @@
 .container {
   text-align: center;
   margin-bottom: 5px;
+  border: 1px solid #c52929;
 }
 
 .contenta {
@@ -87,6 +110,8 @@
   background: #ddd;
 }
 
+
+
 .scroll {
   overflow: scroll;
 }
@@ -97,17 +122,76 @@
 }
 
 .scrolly {
-  overflow: hidden;
+  // overflow: hidden;
   overflow-y: scroll;
+}
+
+
+.hide{
+  display: none;
 }
 
 .box p {
   white-space: nowrap;
 }
 
+.card_special{
+  max-width: calc(100%/3);
+}
+
+.members{
+  border: 1px solid #000;
+  text-align: left;
+  font-size: 0;
+}
+.member{
+  font-size: 1rem;
+  display: inline-block;
+  width: calc((100% - 100px) / 3);
+  border: 1px solid #000;
+  margin-top: 20px;
+  vertical-align: top;
+  height: 450px;
+  margin-right: 50px;
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+  div{
+    padding: 2px;
+  }
+}
+.iframe-wrap{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 50%;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.access-table{
+  margin: 5%;
+  text-align: left;
+  th{
+    padding: 3px;
+  }
+}
+
 @media (max-width: 767px) {
   .columns {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media(max-width: 575px){
+  .card_special{
+    max-width: 100%;
   }
 }
