@@ -35,6 +35,11 @@ h2{
   text-align: center;
 }
 
+.card-deck{
+  .card{
+    margin: 5px 0 5px 0;
+  }
+}
 .box {
   width: 150px;
   height: 100px;
@@ -151,8 +156,12 @@ h2{
   border: 1px solid #000;
   margin-top: 20px;
   vertical-align: top;
-  height: 450px;
+  // height: 450px;
   margin-right: 50px;
+  h5{
+    height: 50px;
+    padding: 5px 0 5px 0;
+  }
   &:nth-child(3n){
     margin-right: 0;
   }
@@ -183,14 +192,40 @@ iframe {
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 1200px){
+  .member{
+    width: calc((100% - 50px) / 2);
+    &:nth-child(3n){
+      margin-right: 50px;
+    }
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+}
+
+@media not all and (max-width:767px){
+  .card-deck{
+    h5+p{
+      background: #000;
+      height: 80px;
+      padding: 2px 0 2px 0;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
   .columns {
     display: block;
     margin: 0 auto;
   }
+  .member{
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
-@media(max-width: 575px){
+@media all and (max-width: 575px){
   .card_special{
     max-width: 100%;
   }
