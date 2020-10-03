@@ -14,6 +14,11 @@ body{
   padding: 0;
   // background:pink;
 }
+#inner{
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
 .former-h5{
   font-size: 1.25rem;
   font-weight: 500;
@@ -159,21 +164,30 @@ h2{
 .member{
   font-size: 1rem;
   display: inline-block;
-  width: calc((100% - 100px) / 3);
+  width: calc((100% - 100px) / 5);
   border: 1px solid #000;
   margin-top: 20px;
   vertical-align: top;
   // height: 450px;
-  margin-right: 50px;
-  h5{
-    height: 50px;
-    padding: 5px 0 5px 0;
+  margin-right: 20px;
+  .former-h5{
+    height: 60px;
+    // padding: 5px 0 5px 0;
+    margin-bottom: 0;
   }
-  &:nth-child(3n){
+  &:nth-child(5n){
     margin-right: 0;
   }
   div{
-    padding: 2px;
+    padding-left: 2px;
+    // height: 180px;
+    p{
+      margin-block-start: 0;
+    margin-block-end: 0;
+    }
+  }
+  .member-detail{
+    height: 75px;
   }
 }
 .iframe-wrap{
@@ -212,11 +226,11 @@ iframe {
 
 @media(max-width: 1200px){
   .member{
-    width: calc((100% - 50px) / 2);
-    &:nth-child(3n){
-      margin-right: 50px;
+    width: calc((100% - 50px) / 3);
+    &:nth-child(5n){
+      margin-right: 20px;
     }
-    &:nth-child(2n){
+    &:nth-child(3n){
       margin-right: 0;
     }
   }
