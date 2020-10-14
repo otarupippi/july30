@@ -33,6 +33,9 @@ body {
 
 .navbar-dark {
   background-color: black !important;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
 }
 
 h2 {
@@ -245,6 +248,9 @@ iframe {
 }
 
 @media all and (max-width: 767px) {
+  .jumbotron {
+    padding-top: 3rem;
+  }
   .columns {
     display: block;
     margin: 0 auto;
