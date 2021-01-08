@@ -226,7 +226,13 @@ iframe {
     // width: 80%;
   }
 }
-
+.iframe-wrap2{
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 20%;
+}
 @media(max-width: 1200px){
   .member{
     width: calc((100% - 50px) / 3);
