@@ -211,15 +211,18 @@ iframe {
   height: 100%;
 }
 
+git
 .access-table {
   margin: 5%;
   text-align: left;
 }
 
+git
 .access-table th {
   padding: 3px;
 }
 
+git
 .access-table td {
   padding: 3px 50px;
 }
@@ -230,6 +233,11 @@ iframe {
 
 .recruitment div {
   margin: 0 auto;
+}
+
+#recruitment img {
+  width: 50%;
+  min-width: 150px;
 }
 
 .iframe-wrap2 {
