@@ -38,6 +38,10 @@ body {
   width: 100%;
 }
 
+.for-image {
+  background-image: url(../img/everyone1.jpg);
+}
+
 h2 {
   margin-top: 30px;
   text-align: center;

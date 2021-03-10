@@ -1,27 +1,19 @@
-*{
+* {
   border: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
-  // background:pink;
-}
-#inner{
-  width: 100%;
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-.former-h5{
-  font-size: 1.25rem;
-  font-weight: 500;
+  background: pink;
 }
 
 .header__logo {
@@ -31,32 +23,19 @@ body{
 
 .navbar-dark {
   background-color: black !important;
-  z-index: 2;
-  position: fixed;
-  width: 100%;
 }
 
-.for-image{
-  background-image: url(../img/everyone1.jpg);
+.news {
+  width: 80%;
+  margin: 10px auto;
+  height: 300px;
 }
 
-h2{
+h2 {
   margin-top: 30px;
   text-align: center;
 }
 
-.card-deck{
-  .card{
-    margin: 5px 15px;
-  }
-  img{
-    height: 250px;
-    object-fit: contain;
-  }
-}
-.syllabus{
-  margin: auto 15px;
-}
 .box {
   width: 150px;
   height: 100px;
@@ -86,7 +65,7 @@ h2{
 .container {
   text-align: center;
   margin-bottom: 5px;
-  // border: 1px solid #c52929;
+  border: 1px solid #c52929;
 }
 
 .contenta {
@@ -119,7 +98,7 @@ h2{
 }
 
 .news {
-  // width: 80%;
+  width: 80%;
   margin: 10px auto;
   height: 300px;
 }
@@ -132,8 +111,6 @@ h2{
   background: #ddd;
 }
 
-
-
 .scroll {
   overflow: scroll;
 }
@@ -144,12 +121,10 @@ h2{
 }
 
 .scrolly {
-  // overflow: hidden;
   overflow-y: scroll;
 }
 
-
-.hide{
+.hide {
   display: none;
 }
 
@@ -157,51 +132,43 @@ h2{
   white-space: nowrap;
 }
 
-.card_special{
+.card_special {
   max-width: calc(100%/3);
 }
 
-.members{
-  // border: 1px solid #000;
+.members {
+  border: 1px solid #000;
   text-align: left;
   font-size: 0;
 }
-.member{
+
+.member {
   font-size: 1rem;
   display: inline-block;
-  width: calc((100% - 100px) / 5);
+  width: calc((100% - 100px) / 3);
   border: 1px solid #000;
   margin-top: 20px;
   vertical-align: top;
-  // height: 450px;
-  margin-right: 20px;
-  .former-h5{
-    height: 60px;
-    // padding: 5px 0 5px 0;
-    margin-bottom: 0;
-  }
-  &:nth-child(5n){
-    margin-right: 0;
-  }
-  div{
-    padding-left: 2px;
-    // height: 180px;
-    p{
-      margin-block-start: 0;
-    margin-block-end: 0;
-    }
-  }
-  .member-detail{
-    height: 75px;
-  }
+  height: 450px;
+  margin-right: 50px;
 }
-.iframe-wrap{
+
+.member:nth-child(3n) {
+  margin-right: 0;
+}
+
+.member div {
+  padding: 2px;
+}
+
+.iframe-wrap {
   position: relative;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 40px;
   padding-top: 50%;
 }
+
 iframe {
   position: absolute;
   top: 0;
@@ -210,69 +177,24 @@ iframe {
   height: 100%;
 }
 
-.access-table{
+.access-table {
   margin: 5%;
   text-align: left;
-  th{
-    padding: 3px;
-  }
-  td{
-    // border: 1px solid #000;
-    padding: 3px 50px;
-  }
-}
-.recruitment{
-  text-align: left;
-  div{
-    margin: 0 auto;
-    // width: 80%;
-  }
-}
-.iframe-wrap2{
-  position: relative;
-  width: 40%;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  padding-top: 20%;
-}
-@media(max-width: 1200px){
-  .member{
-    width: calc((100% - 50px) / 3);
-    &:nth-child(5n){
-      margin-right: 20px;
-    }
-    &:nth-child(3n){
-      margin-right: 0;
-    }
-  }
 }
 
-@media not all and (max-width:767px){
-  .card-deck{
-    .former-h5+p{
-      // background: #000;  
-      height: 80px;
-      padding: 2px 0 2px 0;
-    }
-  }
+.access-table th {
+  padding: 3px;
 }
 
-@media all and (max-width: 767px) {
-  .jumbotron{
-    padding-top: 3rem;
-  }
+@media (max-width: 767px) {
   .columns {
     display: block;
     margin: 0 auto;
   }
-  .member{
-    width: 100%;
-    margin-right: 0;
-  }
 }
 
-@media all and (max-width: 575px){
-  .card_special{
+@media (max-width: 575px) {
+  .card_special {
     max-width: 100%;
   }
 }
