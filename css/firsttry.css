@@ -38,8 +38,12 @@ body {
   width: 100%;
 }
 
-.for-image {
-  background-image: url(../img/everyone1.jpg);
+.navbar-brand img {
+  width: 80px;
+}
+
+.jumbotron {
+  padding-top: 80px;
 }
 
 h2 {
@@ -267,9 +271,6 @@ iframe {
 }
 
 @media all and (max-width: 767px) {
-  .jumbotron {
-    padding-top: 3rem;
-  }
   .columns {
     display: block;
     margin: 0 auto;
