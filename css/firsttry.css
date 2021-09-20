@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-y: scroll;
 }
 
 *::before,
@@ -14,14 +13,12 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-y: scroll;
 }
 
 #inner {
   width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .former-h5 {
@@ -106,7 +103,7 @@ h2 {
 }
 
 footer {
-  color: blue;
+  color: #efefef;
   margin-top: 100px;
   position: absolute;
 }
