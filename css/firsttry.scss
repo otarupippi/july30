@@ -106,6 +106,7 @@ footer {
   color: #efefef;
   margin-top: 100px;
   position: absolute;
+  width: 100%;
 }
 
 .notes {
@@ -213,7 +214,7 @@ footer {
 }
 .iframe-parent{
   text-align: center;
-  background: #c52929;
+  // background: #c52929;
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
@@ -294,8 +295,14 @@ iframe {
     width: 100%;
     margin-right: 0;
   }
-  footer{
-    margin-top: 500px;
+  // footer{
+  //   margin-top: 500px;
+  // }
+}
+
+@media all and (max-width: 599px){
+  .dn{
+    display: none;
   }
 }
 
