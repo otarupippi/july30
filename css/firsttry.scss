@@ -256,6 +256,13 @@ iframe {
     border: 1px solid #000;
   }
 }
+#gallery{
+  img{
+    width: 50%;
+    min-width:150px;
+    border: 1px solid #000;
+  }
+}
 .iframe-wrap2{
   position: relative;
   width: 40%;
